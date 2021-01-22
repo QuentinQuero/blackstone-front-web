@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { DefiComponent } from './exploration/defi/defi.component';
 import { MapComponent } from './exploration/map/map.component';
 import { CharacterComponent } from './character/character.component';
+import { Character_pageComponent } from './pages/character/character_page.component';
+import { CharacterDetailsComponent } from './components/character-details/character-details.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { CharacterComponent } from './character/character.component';
     MapComponent
     AppComponent,
     CharacterComponent
+    Character_pageComponent,
+    CharacterDetailsComponent
   ],
   imports: [
     BrowserModule,
