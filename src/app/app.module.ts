@@ -8,6 +8,8 @@ import { CharacterDetailsComponent } from './components/character-details/charac
 import { HttpClientModule } from '@angular/common/http';
 import { CharacterListPageComponent } from './pages/character-list-page/character-list-page.component';
 import {CharacterCardComponent} from "./components/character-card/character-card.component";
+import { StarshipsComponent } from './components/starships/starships.component';
+import { StarshipsPageComponent } from './pages/starships-page/starships-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import {CharacterCardComponent} from "./components/character-card/character-card
     Character_pageComponent,
     CharacterDetailsComponent,
     CharacterCardComponent,
-    CharacterListPageComponent
+    CharacterListPageComponent,
+    StarshipsComponent,
+    StarshipsPageComponent
   ],
   imports: [
     BrowserModule,
