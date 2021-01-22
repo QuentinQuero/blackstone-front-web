@@ -3,21 +3,21 @@ import { AppRoutingModule } from './app-routing.module'; // CLI imports AppRouti
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { DefiComponent } from './exploration/defi/defi.component';
-import { MapComponent } from './exploration/map/map.component';
 import { CharacterComponent } from './character/character.component';
 import { Character_pageComponent } from './pages/character/character_page.component';
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
+import { MapComponent } from './components/map/map.component';
+import { MapPageComponent } from './pages/map-page/map-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DefiComponent,
-    MapComponent
     AppComponent,
-    CharacterComponent
+    CharacterComponent,
     Character_pageComponent,
-    CharacterDetailsComponent
+    CharacterDetailsComponent,
+    MapComponent,
+    MapPageComponent
   ],
   imports: [
     BrowserModule,
