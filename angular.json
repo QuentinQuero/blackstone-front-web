@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "blackstone-front-web"
+  "defaultProject": "blackstone-front-web",
+  "cli": {
+    "analytics": false
+  }
 }
