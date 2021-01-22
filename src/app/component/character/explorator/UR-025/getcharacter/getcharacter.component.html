@@ -1,0 +1,6 @@
+<p>getcharacter works!</p>
+<button (click)="getCharacter()">Visualisation</button>
+
+<div *ngFor="let character of characters | async">
+  {{character | json}}
+</div>
