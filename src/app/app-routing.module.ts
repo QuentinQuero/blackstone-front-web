@@ -5,7 +5,7 @@ import {CharacterListPageComponent} from "./pages/character-list-page/character-
 
 /* importer vos pages ici */
 const routes: Routes = [
-  { path: 'character', component: Character_pageComponent },
+  { path: 'character_detail/:id', component: Character_pageComponent },
   { path: 'characters', component: CharacterListPageComponent }
   /* créer vos path ici avec votre component ici */
 ];

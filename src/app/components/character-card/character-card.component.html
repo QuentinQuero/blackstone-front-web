@@ -1,1 +1,11 @@
-<p>{{character.name}}</p>
+<div class="card mt-5" style="width: 18rem;">
+  <img class="card-img-top" src="{{ imageURL + character.image}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title lead bg-dark text-light">{{character.name}}</h5>
+    <p class="card-text"><span class="h6">Nombre de vie : </span>{{character.life}}<br>
+      <span class="h6">Point de mouvement : </span>{{character.movement}}<br>
+
+      <span class="text-justify" *ngFor="let object of character.exalte"><span class="h6">Mode exalté : </span>{{object.description}}</span></p>
+    <a routerLink="/character_detail/{{character._id}}" class="btn btn-primary">Plus de détail</a>
+  </div>
+</div>
