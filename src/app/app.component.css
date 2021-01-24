@@ -1,3 +1,13 @@
 .logosize {
   width: 200px;
 }
+
+.listenone {
+  list-style-type: none;
+}
+
+.bodyapp {
+  background-image: url("http://localhost:3000/static/image/fond/fond.jpeg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
