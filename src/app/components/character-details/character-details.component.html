@@ -25,24 +25,22 @@
     </table>
 
     <div class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">Action d'armes</div>
-
-    <table class="table text-center">
-      <thead class="thead-light">
-      <tr>
-        <th class="col-6">Armes</th>
-        <th class="col-6">Portée</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <div *ngFor="let object of characters.capacity">
-          <div *ngFor="let objects of object.range">
-            <td class="col-6">{{object.attack}}</td>
-          </div>
-        </div>
-      </tr>
-      </tbody>
-    </table>
+    <ul class="bg-light">
+      <li *ngFor="let object of characters.capacity">
+        {{object.attack}}
+        <ul *ngFor="let objects of object.range">
+          <li>
+            <span class="font-italic h6">Portée de 1 : </span>  {{objects.un}}
+          </li>
+          <li>
+            <span class="font-italic h6">Portée de 2 à 3 : </span>{{objects.deuxtrois}}
+          </li>
+          <li>
+            <span class="font-italic h6">Portée de 4 et + : </span>{{objects.quatreplus}}
+          </li>
+        </ul>
+      </li>
+    </ul>
     <div class="alert alert-secondary fontsizelittle" *ngIf="characters.specialAttack" role="alert">
       <span class="h6">Information d'arme :</span> {{characters.specialAttack}}
     </div>
@@ -105,25 +103,22 @@
         </table>
 
         <div class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">Action d'armes</div>
-
-        <table class="table text-center">
-          <thead class="thead-light">
-          <tr>
-            <th class="col-6">Armes</th>
-            <th class="col-6">Portée</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <div *ngFor="let object of characters.capacity_exalte">
-              <div *ngFor="let objects of object.range">
-                <th class="col-12 bg-light">{{object.attack}}</th>
-                <td class="col-12 bg-light">Dé bleu à 5 cotés</td>
-              </div>
-            </div>
-          </tr>
-          </tbody>
-        </table>
+        <ul class="bg-light">
+          <li *ngFor="let object of characters.capacity_exalte">
+            {{object.attack}}
+            <ul *ngFor="let objects of object.range">
+              <li>
+                <span class="font-italic h6">Portée de 1 : </span>  {{objects.un}}
+              </li>
+              <li>
+                <span class="font-italic h6">Portée de 2 à 3 : </span>{{objects.deuxtrois}}
+              </li>
+              <li>
+                <span class="font-italic h6">Portée de 4 et + : </span>{{objects.quatreplus}}
+              </li>
+            </ul>
+          </li>
+        </ul>
         <div class="alert alert-secondary fontsizelittle" *ngIf="characters.specialAttack_exalte" role="alert">
           <span class="h6">Information d'arme :</span> {{characters.specialAttack_exalte}}
         </div>
