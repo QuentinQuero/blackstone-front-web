@@ -7,7 +7,10 @@ import { Character_pageComponent } from './pages/character/character_page.compon
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
 import { CharacterListPageComponent } from './pages/character-list-page/character-list-page.component';
 import {CharacterCardComponent} from "./components/character-card/character-card.component";
-import { ChallengeComponent } from './components/exploration/challenge/challenge.component';
+
+import { ChallengeCardsComponent } from './components/exploration/challenge-cards/challenge-cards.component';
+import {ChallengesComponent} from "./pages/exploration/challenges/challenges.component";
+
 import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
@@ -17,7 +20,8 @@ import {HttpClientModule} from "@angular/common/http";
     CharacterDetailsComponent,
     CharacterCardComponent,
     CharacterListPageComponent,
-    ChallengeComponent
+    ChallengeCardsComponent,
+    ChallengesComponent
   ],
   imports: [
     BrowserModule,
