@@ -7,7 +7,7 @@ import {ChallengesComponent} from "./pages/exploration/challenges/challenges.com
 /* importer vos pages ici */
 const routes: Routes = [
   { path: 'character', component: Character_pageComponent },
-  { path: 'characters', component: CharacterListPageComponent }
+  { path: 'characters', component: CharacterListPageComponent },
   { path: 'challenges', component: ChallengesComponent }
   /* créer vos path ici avec votre component ici */
 ];
