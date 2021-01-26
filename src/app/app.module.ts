@@ -12,6 +12,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { CharacterListPageComponent } from './pages/character-list-page/character-list-page.component';
 import {CharacterCardComponent} from "./components/character-card/character-card.component";
 
+import { ChallengeCardsComponent } from './components/exploration/challenge-cards/challenge-cards.component';
+import {ChallengesComponent} from "./pages/exploration/challenges/challenges.component";
+
+import {HttpClientModule} from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +27,9 @@ import {CharacterCardComponent} from "./components/character-card/character-card
     MapComponent,
     MapPageComponent
     CharacterCardComponent,
-    CharacterListPageComponent
+    CharacterListPageComponent,
+    ChallengeCardsComponent,
+    ChallengesComponent
   ],
   imports: [
     BrowserModule,
