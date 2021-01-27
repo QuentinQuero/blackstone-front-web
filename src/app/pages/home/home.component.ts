@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HomepersonnageComponent } from '../../components/homepersonnage/homepersonnage.component'
 
 @Component({
   selector: 'app-home',
