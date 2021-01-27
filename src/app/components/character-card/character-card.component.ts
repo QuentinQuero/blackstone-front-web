@@ -8,8 +8,10 @@ import {Component, Input, OnInit} from '@angular/core';
 export class CharacterCardComponent implements OnInit {
 
   @Input() character;
+  @Input() imageURL;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

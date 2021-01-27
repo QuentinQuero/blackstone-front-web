@@ -7,7 +7,7 @@ import { ExplorationComponent } from "./pages/exploration/exploration.component"
 
 /* importer vos pages ici */
 const routes: Routes = [
-  { path: 'character', component: Character_pageComponent },
+  { path: 'character_detail/:id', component: Character_pageComponent },
   { path: 'characters', component: CharacterListPageComponent },
   { path: 'challenges', component: ChallengesComponent },
   { path: 'exploration', component: ExplorationComponent }

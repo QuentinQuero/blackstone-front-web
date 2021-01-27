@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blackstone-front-web';
+  logoURL = 'http://localhost:3000/static/image/logo/blackstone-fortress.png'
   static url = 'http://localhost:3000';
 }
