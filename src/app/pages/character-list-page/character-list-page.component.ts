@@ -23,9 +23,7 @@ export class CharacterListPageComponent implements OnInit {
 
   async getAllCharacters() {
     (await this.characterService.getAllCharaters()).subscribe(data => {
-      // @ts-ignore
-      console.log(data.data);
-      // @ts-ignore
+      //@ts-ignore
       this.characters = data.data;
     });
   }
