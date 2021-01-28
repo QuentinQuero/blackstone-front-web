@@ -1,17 +1,19 @@
-<h1 class="mb-5">Vaisseau</h1>
-  <div *ngFor="let data of starship" class="card mb-3" style="responsiv">
+<div class="trap-block">
+  <h1 class="mb-5" align="center"><i>Vaisseau</i></h1>
+</div>
+  <div *ngFor="let data of starship" class="card mb-3" style="">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="{{URL + data.image}}" class="card-img-top">
+        <img src="{{URL + data.image}}" class="card-img-top" >
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h2>
+          <h2 align="center">
             <span><i>{{data.name}}</i></span>
           </h2>
           <ul>
             <h3>
-              <i>Exploreteur</i>
+              <i>Explorateur</i>
             </h3>
             <li>
                 <a href="#">{{data.explorateur}}</a>

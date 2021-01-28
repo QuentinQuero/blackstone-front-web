@@ -1,0 +1,11 @@
+.trap-block {
+           border-bottom: 60px solid #000000;/*высота трапеции и её фоновый цвет*/
+           border-left: 40px solid transparent; /*наклон левой границы*/
+           border-right: 40px solid transparent;/*наклон правой границы*/
+           height: 0; /*это значение высоты должно быть равным 0*/
+           width: 300px;/*ширина трапеции*/
+           margin:20px auto;/*выравнивание блока по центру и отступы сверху и снизу*/
+           color:#fff;/*цвет шрифта*/
+           text-align:center;/*выравнивание текста по центру*/
+           line-height:80px;/*высота строки текста*/
+         }
