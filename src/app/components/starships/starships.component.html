@@ -1,1 +1,44 @@
-<p>starships works!</p>
+<h1 class="mb-5">Vaisseau</h1>
+  <div *ngFor="let data of starship" class="card mb-3" style="responsiv">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{URL + data.image}}" class="card-img-top">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2>
+            <span><i>{{data.name}}</i></span>
+          </h2>
+          <ul>
+            <h3>
+              <i>Exploreteur</i>
+            </h3>
+            <li>
+                <a href="#">{{data.explorateur}}</a>
+            </li>
+          </ul>
+          <ul>
+          <h3>
+            <span>
+              <i>Mode Appui</i>
+            </span>
+          </h3>
+              <li>
+                {{data.appui}}
+              </li>
+            </ul>
+          <ul>
+            <h3>
+            <span>
+              <i>Mode Instalation</i>
+            </span>
+            </h3>
+            <li>
+              {{data.instalations}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+

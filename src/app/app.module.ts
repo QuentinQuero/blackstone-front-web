@@ -22,8 +22,8 @@ import {HttpClientModule} from "@angular/common/http";
     CharacterDetailsComponent,
     CharacterCardComponent,
     StarshipsComponent,
-    StarshipsPageComponent
-    ChallengesComponent
+    StarshipsPageComponent,
+    ChallengesComponent,
     ChallengeCardsComponent,
     CharacterListPageComponent,
   ],
