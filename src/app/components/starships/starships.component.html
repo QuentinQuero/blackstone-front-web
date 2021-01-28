@@ -1,46 +1,53 @@
+<div class="ship">
 <div class="trap-block">
   <h1 class="mb-5" align="center"><i>Vaisseau</i></h1>
 </div>
-  <div *ngFor="let data of starship" class="card mb-3" style="">
+  <div id="back" *ngFor="let data of starship" class="card mb-2">
     <div class="row g-0">
       <div class="col-md-4">
         <img src="{{URL + data.image}}" class="card-img-top" >
       </div>
       <div class="col-md-8">
-        <div class="card-body">
-          <h2 align="center">
-            <span><i>{{data.name}}</i></span>
-          </h2>
+        <div id="logo" class="card-body">
+          <h3 align="center">
+            <div class="octagon-block1">
+            <th><i>< {{data.name}} ></i></th>
+            </div>
+          </h3>
           <ul>
-            <h3>
+            <h4>
+              <div class="octagon-block2">
               <i>Explorateur</i>
-            </h3>
+              </div>
+            </h4>
             <li>
-                <a href="#">{{data.explorateur}}</a>
+                <i><a href="/characters"><th>+++ {{data.explorateur}} +++</th></a></i>
             </li>
           </ul>
           <ul>
-          <h3>
-            <span>
+          <h4>
+            <div class="octagon-block2">
               <i>Mode Appui</i>
-            </span>
-          </h3>
-              <li>
+            </div>
+          </h4>
+              <li><th>
                 {{data.appui}}
+              </th>
               </li>
             </ul>
           <ul>
-            <h3>
-            <span>
-              <i>Mode Instalation</i>
-            </span>
-            </h3>
-            <li>
+            <h4>
+              <div class="octagon-block3">
+              <i>Mode Installation</i>
+            </div>
+            </h4>
+            <li><th>
               {{data.instalations}}
+            </th>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-
+</div>

@@ -1,1 +1,148 @@
-<p>character-details works!</p>
+<div class="p-4 mb-2 mt-3 bg-dark text-light h2">L'explorateur : {{characters.name}}</div>
+<div class="row">
+  <div class="mt-2 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+    <img class="borderdark" height="100%" width="100%" src="{{ imageURL + characters.image}}" alt="Card image cap">
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+    <div class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">Stats de base</div>
+    <table class="table text-center">
+      <thead class="thead-light">
+      <tr>
+        <th scope="col">Mouvement</th>
+        <th scope="col">Défense</th>
+        <th scope="col">Agilité</th>
+        <th scope="col">Vitalité</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">{{characters.movement}}</th>
+        <td>{{characters.defense}}</td>
+        <td>{{characters.agility}}</td>
+        <td>{{characters.vitality}}</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <div class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">Action d'armes</div>
+    <ul class="bg-light">
+      <li *ngFor="let object of characters.capacity">
+        {{object.attack}}
+        <ul *ngFor="let objects of object.range">
+          <li>
+            <span class="font-italic h6">Portée de 1 : </span>  {{objects.un}}
+          </li>
+          <li>
+            <span class="font-italic h6">Portée de 2 à 3 : </span>{{objects.deuxtrois}}
+          </li>
+          <li>
+            <span class="font-italic h6">Portée de 4 et + : </span>{{objects.quatreplus}}
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="alert alert-secondary fontsizelittle" *ngIf="characters.specialAttack" role="alert">
+      <span class="h6">Information d'arme :</span> {{characters.specialAttack}}
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngIf="characters.specialRole.length > 0">
+    <div class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">Règles spéciales</div>
+    <ul class="bg-light">
+      <div *ngFor="let object of characters.specialRole" class="p-1">
+          <li>
+            <p><span class="h6">{{object.name}}</span> : {{object.description}}</p>
+          </li>
+      </div>
+    </ul>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngIf="characters.exalte.length > 0">
+    <div class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">Intentions secrètes</div>
+    <div class="bg-light">
+      <div *ngFor="let object of characters.exalte" class="p-1">
+          <p class="text-center">{{object.description}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngIf="characters.uniqueattack.length > 0">
+      <div class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">Attaque unique</div>
+    <ul class="bg-light">
+      <div *ngFor="let object of characters.uniqueattack" class="p-1">
+        <li>
+          <p><span class="h6">{{object.name}}</span> : {{object.description}}</p>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngIf="characters.exalte.length > 0">
+    <p>
+      <a class="d-block p-4 mb-2 mt-3 bg-info text-light h2 text-center" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Etat exalté
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">Stats de base</div>
+        <table class="table text-center">
+          <thead class="thead-light">
+          <tr>
+            <th scope="col">Mouvement</th>
+            <th scope="col">Défense</th>
+            <th scope="col">Agilité</th>
+            <th scope="col">Vitalité</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">{{characters.movement}}</th>
+            <td>{{characters.defense_exalte}}</td>
+            <td>{{characters.agility_exalte}}</td>
+            <td>{{characters.vitality_exalte}}</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <div class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">Action d'armes</div>
+        <ul class="bg-light">
+          <li *ngFor="let object of characters.capacity_exalte">
+            {{object.attack}}
+            <ul *ngFor="let objects of object.range">
+              <li>
+                <span class="font-italic h6">Portée de 1 : </span>  {{objects.un}}
+              </li>
+              <li>
+                <span class="font-italic h6">Portée de 2 à 3 : </span>{{objects.deuxtrois}}
+              </li>
+              <li>
+                <span class="font-italic h6">Portée de 4 et + : </span>{{objects.quatreplus}}
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="alert alert-secondary fontsizelittle" *ngIf="characters.specialAttack_exalte" role="alert">
+          <span class="h6">Information d'arme :</span> {{characters.specialAttack_exalte}}
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngIf="characters.specialRole_exalte.length > 0">
+        <div class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">Règles spéciales</div>
+        <ul class="bg-light">
+          <div *ngFor="let object of characters.specialRole_exalte" class="p-1">
+            <li>
+              <p><span class="h6">{{object.name}}</span> : {{object.description}}</p>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngIf="characters.uniqueattack_exalte.length > 0">
+        <div class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">Attaque unique</div>
+        <ul class="bg-light">
+          <div *ngFor="let object of characters.uniqueattack_exalte" class="p-1">
+            <li>
+              <p><span class="h6">{{object.name}}</span> : {{object.description}}</p>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

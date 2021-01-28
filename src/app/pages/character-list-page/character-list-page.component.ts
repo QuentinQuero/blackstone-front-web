@@ -13,6 +13,7 @@ import {addWarning} from "@angular-devkit/build-angular/src/utils/webpack-diagno
 export class CharacterListPageComponent implements OnInit {
 
   characters = [];
+  imageURL = 'http://localhost:3000/static';
 
   constructor(private http: HttpClient, private characterService: CharacterService) { }
 

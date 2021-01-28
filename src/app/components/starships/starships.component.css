@@ -1,7 +1,14 @@
+/*.ship{*/
+/*  !*background-image: url("http://localhost:3000/image/starship/back2.jpg");*!*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: center;*/
+/*  background-color:#080707a2;*/
+
+/*}*/
 .trap-block {
-           border-bottom: 60px solid #000000;/*высота трапеции и её фоновый цвет*/
-           border-left: 40px solid transparent; /*наклон левой границы*/
-           border-right: 40px solid transparent;/*наклон правой границы*/
+           border-bottom: 60px solid #080707c1;/*высота трапеции и её фоновый цвет*/
+           border-left: 50px solid transparent; /*наклон левой границы*/
+           border-right: 50px solid transparent;/*наклон правой границы*/
            height: 0; /*это значение высоты должно быть равным 0*/
            width: 300px;/*ширина трапеции*/
            margin:20px auto;/*выравнивание блока по центру и отступы сверху и снизу*/
@@ -9,3 +16,86 @@
            text-align:center;/*выравнивание текста по центру*/
            line-height:80px;/*высота строки текста*/
          }
+
+.octagon-block1 {
+  background:#080707c1;/*цвет фона*/
+  width:510px;/*ширина */
+  height:65px;/*высота */
+  padding:15px 15px;/*внутренние отступы*/
+  color:#fff;/*цвет шрифта*/
+  margin:10px auto;/*выравнивание блока по центру и отступы сверху и снизу*/
+  clip-path:
+    polygon(
+      0% 15px, /* верхняя левая */
+      15px 0%, /* верхняя левая */
+      calc(100% - 15px) 0%, /* верхняя правая */
+      100% 15px, /* верхняя правая */
+      100% calc(100% - 15px),  /* нижняя правая */
+      calc(100% - 15px) 100%,  /* нижняя правая */
+      15px 100%, /* нижняя левая */
+      0 calc(100% - 15px) /* нижняя левая */
+    );
+}
+.octagon-block2 {
+  background:#080707c1;/*цвет фона*/
+  width:170px;/*ширина */
+  height:40px;/*высота */
+  padding:3px 6px;/*внутренние отступы*/
+  color:#fff;/*цвет шрифта*/
+  text-align:center;
+  /*выравнивание блока по центру и отступы сверху и снизу*/
+  clip-path:
+    polygon(
+      0% 9px, /* верхняя левая */
+      9px 0%, /* верхняя левая */
+      calc(100% - 9px) 0%, /* верхняя правая */
+      100% 9px, /* верхняя правая */
+      100% calc(100% - 9px),  /* нижняя правая */
+      calc(100% - 9px) 100%,  /* нижняя правая */
+      9px 100%, /* нижняя левая */
+      0 calc(100% - 9px) /* нижняя левая */
+    );
+}
+
+.octagon-block3 {
+  background:#080707c1;/*цвет фона*/
+  width:230px;/*ширина */
+  height:40px;/*высота */
+  padding:3px 6px;/*внутренние отступы*/
+  color:#fff;/*цвет шрифта*/
+  text-align:center;
+  /*выравнивание блока по центру и отступы сверху и снизу*/
+  clip-path:
+    polygon(
+      0% 9px, /* верхняя левая */
+      9px 0%, /* верхняя левая */
+      calc(100% - 9px) 0%, /* верхняя правая */
+      100% 9px, /* верхняя правая */
+      100% calc(100% - 9px),  /* нижняя правая */
+      calc(100% - 9px) 100%,  /* нижняя правая */
+      9px 100%, /* нижняя левая */
+      0 calc(100% - 9px) /* нижняя левая */
+    );
+}
+#back{
+  background-image: url("http://localhost:3000/image/starship/back3.jpeg");
+  /*background-repeat: no-repeat;*/
+  background-size: 100% 100%;
+  /*background-attachment: fixed;*/
+  background-position: center;
+  /*background-size: cover;*/
+  /*background-color:#080707a2;*/
+
+}
+/*@media (max-width: 100px) {*/
+#logo{
+  background-image: url("http://localhost:3000/image/starship/back.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  /*display: none;*/
+
+}
+
+/*}*/
+
+
