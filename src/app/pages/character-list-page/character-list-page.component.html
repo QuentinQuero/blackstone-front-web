@@ -1,6 +1,13 @@
 
 <div class="container">
-  <div class="row">
-    <app-character-card *ngFor="let character of characters" class="col-sm" [character]="character"></app-character-card>
+  <div class="p-2 mb-2 mt-3 bg-dark text-light h2">Les Personnages</div>
+  <div class="card">
+    <div class="body-card bg-light p-3">
+      <p>Découvrez toutes les caractéristiques des personnages de Warhammer édition BlackStone Fortress,
+        ainsi vous pourrez optimiser la composition d'explorateur afin de venir à bout de la Forteresse Noir</p>
+    </div>
   </div>
+    <div class="row text-center">
+      <app-character-card *ngFor="let character of characters" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center" [character]="character" [imageURL]="imageURL"></app-character-card>
+    </div>
 </div>
