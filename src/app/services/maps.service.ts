@@ -9,6 +9,6 @@ export class MapsService {
 
   constructor(private http: HttpClient )  { }
   async getAllMaps(){
-    return this.http.get(AppComponent.url+'/combatmaps');
+    return this.http.get(AppComponent.url +'/combatmaps');
   }
 }
