@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div *ngFor="let data of maps" class="divmap col-sm-12 col-md-6 col-lg-4 mt-5 justify-content-center">
-      <a class="mapcard ml-4 mr-1" data-toggle="modal" data-target="#MapModal" (click)="printMap(data)">
+      <a class="mapcard ml-3 mr-1" data-toggle="modal" data-target="#MapModal" (click)="printMap(data)">
           <img class="image ml-4"  src="{{imageURL+data.image}}" style="width: 250px; height: 300px;">
       </a>
     </div>

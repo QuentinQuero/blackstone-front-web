@@ -1,5 +1,12 @@
-#bodyapp {
+
+
+.bodyapp {
   background-image: url("http://localhost:3000/images/maps/Background.png");
   background-repeat: no-repeat;
   background-position: bottom;
 }
+p {
+  text-align: center;
+}
+
+
