@@ -20,6 +20,7 @@ import { HomevideoComponent } from './components/homevideo/homevideo.component';
 import { ExplorationComponent } from './pages/exploration/exploration.component';
 import { ChallengeCardsComponent } from './components/exploration/challenge-cards/challenge-cards.component';
 import { ChallengesComponent } from './pages/exploration/challenges/challenges.component';
+import { ImagedeComponent } from './components/imagede/imagede.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ChallengesComponent } from './pages/exploration/challenges/challenges.c
     HomevideoComponent,
     ChallengeCardsComponent,
     ChallengesComponent,
-    ExplorationComponent
+    ExplorationComponent,
+    ImagedeComponent
   ],
   imports: [
     BrowserModule,
