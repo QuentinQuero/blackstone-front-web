@@ -94,8 +94,12 @@
   background-repeat: no-repeat;
   /*display: none;*/
 
+
 }
 
 /*}*/
 
+a {
+  color: firebrick;
+}
 
