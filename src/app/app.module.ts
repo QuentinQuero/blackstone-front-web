@@ -13,7 +13,7 @@ import { MapPageComponent } from './pages/exploration/map-page/map-page.componen
 import { CharacterListPageComponent } from './pages/character-list-page/character-list-page.component';
 import { StarshipsComponent } from './components/starships/starships.component';
 import { StarshipsPageComponent } from './pages/starships-page/starships-page.component';
-import {CharacterCardComponent} from "./components/character-card/character-card.component";
+import {CharacterCardComponent} from './components/character-card/character-card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HomepersonnageComponent } from './components/homepersonnage/homepersonnage.component';
 import { HomevaisseauComponent } from './components/homevaisseau/homevaisseau.component';
@@ -23,6 +23,7 @@ import { ExplorationComponent } from './pages/exploration/exploration.component'
 import { ChallengeCardsComponent } from './components/exploration/challenge-cards/challenge-cards.component';
 import { ChallengesComponent } from './pages/exploration/challenges/challenges.component';
 import { ImagedeComponent } from './components/imagede/imagede.component';
+import { ReglesdebaseComponent } from './pages/reglesdebase/reglesdebase.component';
 
 
 @NgModule({
@@ -44,10 +45,9 @@ import { ImagedeComponent } from './components/imagede/imagede.component';
     HomevaisseauComponent,
     HomeexplorationComponent,
     HomevideoComponent,
-    ChallengeCardsComponent,
-    ChallengesComponent,
     ExplorationComponent,
-    ImagedeComponent
+    ImagedeComponent,
+    ReglesdebaseComponent
   ],
   imports: [
     BrowserModule,
