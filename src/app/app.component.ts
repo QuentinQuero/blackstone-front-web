@@ -6,9 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  static url = 'http://localhost:3000';
   static imagesUrl = AppComponent.url + '/static';
-  title = 'blackstone-front-web';
+  static url = 'http://localhost:3000';
   logoURL = 'http://localhost:3000/static/image/logo/blackstone-fortress.png'
-
+  title = 'blackstone-front-web';
 }
