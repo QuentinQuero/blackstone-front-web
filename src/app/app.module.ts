@@ -23,6 +23,7 @@ import { ExplorationComponent } from './pages/exploration/exploration.component'
 import { ChallengeCardsComponent } from './components/exploration/challenge-cards/challenge-cards.component';
 import { ChallengesComponent } from './pages/exploration/challenges/challenges.component';
 import { ImagedeComponent } from './components/imagede/imagede.component';
+import { ReglesdebaseComponent } from './pages/reglesdebase/reglesdebase.component';
 
 
 @NgModule({
@@ -44,8 +45,9 @@ import { ImagedeComponent } from './components/imagede/imagede.component';
     HomevaisseauComponent,
     HomeexplorationComponent,
     HomevideoComponent,
-    ExplorationComponent
-    ImagedeComponent
+    ExplorationComponent,
+    ImagedeComponent,
+    ReglesdebaseComponent
   ],
   imports: [
     BrowserModule,
