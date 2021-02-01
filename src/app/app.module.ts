@@ -39,8 +39,6 @@ import { ImagedeComponent } from './components/imagede/imagede.component';
     ChallengesComponent,
     ChallengeCardsComponent,
     CharacterListPageComponent,
-    ChallengeCardsComponent,
-    ChallengesComponent,
     HomeComponent,
     HomepersonnageComponent,
     HomevaisseauComponent,
