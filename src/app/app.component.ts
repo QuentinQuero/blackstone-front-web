@@ -9,5 +9,5 @@ export class AppComponent {
   static url = 'http://localhost:3000';
   static imagesUrl = AppComponent.url + '/static';
   title = 'blackstone-front-web';
-  logoURL = 'http://localhost:3000/static/image/logo/blackstone-fortress.png'
+  logoURL = 'http://localhost:3000/static/image/logo/blackstone-fortress.png';
 }

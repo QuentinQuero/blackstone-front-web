@@ -13,7 +13,7 @@ import { MapPageComponent } from './pages/exploration/map-page/map-page.componen
 import { CharacterListPageComponent } from './pages/character-list-page/character-list-page.component';
 import { StarshipsComponent } from './components/starships/starships.component';
 import { StarshipsPageComponent } from './pages/starships-page/starships-page.component';
-import {CharacterCardComponent} from "./components/character-card/character-card.component";
+import {CharacterCardComponent} from './components/character-card/character-card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HomepersonnageComponent } from './components/homepersonnage/homepersonnage.component';
 import { HomevaisseauComponent } from './components/homevaisseau/homevaisseau.component';
@@ -44,7 +44,7 @@ import { ImagedeComponent } from './components/imagede/imagede.component';
     HomevaisseauComponent,
     HomeexplorationComponent,
     HomevideoComponent,
-    ExplorationComponent
+    ExplorationComponent,
     ImagedeComponent
   ],
   imports: [
