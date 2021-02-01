@@ -11,7 +11,9 @@ import { MapComponent } from './components/exploration/map/map.component';
 import { MapPageComponent } from './pages/exploration/map-page/map-page.component';
 
 import { CharacterListPageComponent } from './pages/character-list-page/character-list-page.component';
-import { CharacterCardComponent } from './components/character-card/character-card.component';
+import { StarshipsComponent } from './components/starships/starships.component';
+import { StarshipsPageComponent } from './pages/starships-page/starships-page.component';
+import {CharacterCardComponent} from "./components/character-card/character-card.component";
 import { HomeComponent } from './pages/home/home.component';
 import { HomepersonnageComponent } from './components/homepersonnage/homepersonnage.component';
 import { HomevaisseauComponent } from './components/homevaisseau/homevaisseau.component';
@@ -32,15 +34,17 @@ import { ImagedeComponent } from './components/imagede/imagede.component';
     MapComponent,
     MapPageComponent,
     CharacterCardComponent,
+    StarshipsComponent,
+    StarshipsPageComponent,
+    ChallengesComponent,
+    ChallengeCardsComponent,
     CharacterListPageComponent,
     HomeComponent,
     HomepersonnageComponent,
     HomevaisseauComponent,
     HomeexplorationComponent,
     HomevideoComponent,
-    ChallengeCardsComponent,
-    ChallengesComponent,
-    ExplorationComponent,
+    ExplorationComponent
     ImagedeComponent
   ],
   imports: [
