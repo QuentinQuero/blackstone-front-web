@@ -5,6 +5,7 @@ import {CharacterListPageComponent} from './pages/character-list-page/character-
 import { HomeComponent } from './pages/home/home.component';
 import { ChallengesComponent } from './pages/exploration/challenges/challenges.component';
 import { ExplorationComponent } from './pages/exploration/exploration.component';
+import { ReglesdebaseComponent } from './pages/reglesdebase/reglesdebase.component';
 
 
 /* importer vos pages ici */
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'characters', component: CharacterListPageComponent },
   { path: '',   component: HomeComponent },
   { path: 'challenges', component: ChallengesComponent },
-  { path: 'exploration', component: ExplorationComponent }
+  { path: 'exploration', component: ExplorationComponent },
+  { path: 'reglesdebase', component: ReglesdebaseComponent }
   /* créer vos path ici avec votre component ici */
 ];
 
