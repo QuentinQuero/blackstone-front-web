@@ -16,3 +16,7 @@
 .rounded {
   border-radius: 0.5rem!important;
 }
+
+.shadowcards{
+  box-shadow:   5px 5px 15px rgba(0,0,0,0.2)
+}
