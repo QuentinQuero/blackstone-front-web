@@ -1,12 +1,14 @@
 <div class="card mt-5" style="width: 18rem;">
   <img class="card-img-top" height="300px" width="300px" src="{{ imageURL + character.classic.image}}" alt="Card image cap">
-  <div class="card-body">
+  <div class="card-body d-flex flex-column">
     <h5 class="card-title lead bg-dark text-light">{{character.classic.name}}</h5>
     <p class="card-text"><span class="h6">Nombre de vie : </span>{{character.classic.life}}<br>
       <span class="h6">Point de mouvement : </span>{{character.classic.movement}}<br>
+      <span class="text-justify" *ngFor="let object of character.classic.exalte"><span class="h6">Mode exalté : </span>{{object.description}}</span>
+    </p>
 
-      <span class="text-justify" *ngFor="let object of character.classic.exalte"><span class="h6">Mode exalté : </span>{{object.description}}</span></p>
-    <a routerLink="/character_detail/{{character._id}}" class="btn btn-primary d-flex align-items-end justify-content-center">Plus de détail</a>
+      <a routerLink="/character_detail/{{character._id}}" class="btn mt-auto text-white bg-dark">Plus de détail</a>
+
   </div>
 </div>
 
