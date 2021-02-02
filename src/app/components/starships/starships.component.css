@@ -80,6 +80,7 @@
 #back{
   background-image: url("http://localhost:3000/image/starship/back3.jpeg");
   /*background-repeat: no-repeat;*/
+
   background-size: 100% 100%;
   /*background-attachment: fixed;*/
   background-position: center;
@@ -102,4 +103,3 @@
 a {
   color: firebrick;
 }
-
