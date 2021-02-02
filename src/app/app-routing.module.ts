@@ -5,6 +5,7 @@ import { Character_pageComponent } from './pages/character/character_page.compon
 import { CharacterListPageComponent } from './pages/character-list-page/character-list-page.component';
 import { StarshipsPageComponent } from './pages/starships-page/starships-page.component';
 import { ExplorationComponent } from './pages/exploration/exploration.component';
+import { ReglesdebaseComponent } from './pages/reglesdebase/reglesdebase.component';
 import { ChallengesComponent } from './pages/exploration/challenges/challenges.component';
 import { MapComponent } from './components/exploration/map/map.component';
 import {MapPageComponent} from './pages/exploration/map-page/map-page.component';
@@ -16,6 +17,8 @@ const routes: Routes = [
   { path: 'combatmaps', component: MapPageComponent },
   { path: '',   component: HomeComponent },
   { path: 'challenges', component: ChallengesComponent },
+  { path: 'exploration', component: ExplorationComponent },
+  { path: 'reglesdebase', component: ReglesdebaseComponent },
   { path: 'starships', component:  StarshipsPageComponent },
   { path: 'exploration', component: ExplorationComponent },
   /* créer vos path ici avec votre component ici */

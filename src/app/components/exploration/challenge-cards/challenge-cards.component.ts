@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChallengeService } from "../../../services/challenge.service";
 import { HttpClient } from "@angular/common/http";
+import {AppComponent} from "../../../app.component";
 
 
 @Component({
@@ -12,6 +13,7 @@ import { HttpClient } from "@angular/common/http";
 export class ChallengeCardsComponent implements OnInit {
 
   challengesArray = [];
+  imageURL = AppComponent.url;
 
   constructor(private http: HttpClient, private challengeService: ChallengeService) { }
 

@@ -1,18 +1,27 @@
-<div class="container">
-  <div class="p-2 mb-2 mt-3 bg-dark text-light h2">Défis</div>
-</div>
-<div class="container">
-  <div class="row">
-    <div *ngFor="let data of challengesArray" class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
-        <div class="card min-height: 30 rounded" style="overflow-y: auto; max-height: 300px; width: 20rem; background-image: url('http://localhost:3000/static/images/challenges/texturechallengescards.jpg')">
-          <div class="card-body">
-            <h2 class="card-title" style="font-size: medium; font-weight: bold">{{data.title}}</h2>
-            <p class="card-title">{{data.image}}</p>
-            <p class="card-title">{{data.situation}}</p>
+<body style="background-image: url('http://localhost:3000/static/images/challenges/backgroundchallengescards.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-position-x: -20rem; background-position-y: -5rem">
+  <div class="container">
+    <div class="p-2 mb-2 mt-3 bg-dark text-light h2">Défis</div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let data of challengesArray" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 d-flex justify-content-center">
+        <div class="card mb-4 rounded" style="height: 26rem; min-width: 20rem; max-width: 25rem; background-image: url('http://localhost:3000/static/images/challenges/texturechallengescards.jpg')">
+          <div class="card-header text-white bg-dark" style="font-size: medium; font-weight: bold">{{data.title}}</div>
+          <div class="card-body " style="overflow-y: auto">
+            <p class="card-text" style="font-weight: bold">{{data.situation}}</p>
+            <div *ngIf="data.image">
+              <div *ngIf="data.image == 'http://localhost:3000/static/images/challenges/defiepreuvemortelle.jpg'; else elseBlock">
+                <img class="image" src="{{data.image}}" id="preview" style="width: 18rem">
+              </div>
+              <ng-template #elseBlock>
+                <img class="image " src="{{data.image}}" id="preview" style="width: 10rem">
+              </ng-template>
+            </div>
             <p class="card-text">{{data.description}}</p>
           </div>
         </div>
+      </div>
     </div>
   </div>
-</div>
+</body>
 
