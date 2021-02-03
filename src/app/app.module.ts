@@ -13,7 +13,7 @@ import { MapPageComponent } from './pages/exploration/map-page/map-page.componen
 import { CharacterListPageComponent } from './pages/character-list-page/character-list-page.component';
 import { StarshipsComponent } from './components/starships/starships.component';
 import { StarshipsPageComponent } from './pages/starships-page/starships-page.component';
-import {CharacterCardComponent} from "./components/character-card/character-card.component";
+import { CharacterCardComponent } from "./components/character-card/character-card.component";
 import { HomeComponent } from './pages/home/home.component';
 import { HomepersonnageComponent } from './components/homepersonnage/homepersonnage.component';
 import { HomevaisseauComponent } from './components/homevaisseau/homevaisseau.component';
@@ -24,6 +24,7 @@ import { ChallengeCardsComponent } from './components/exploration/challenge-card
 import { ChallengesComponent } from './pages/exploration/challenges/challenges.component';
 import { ImagedeComponent } from './components/imagede/imagede.component';
 import { ReglesdebaseComponent } from './pages/reglesdebase/reglesdebase.component';
+import { ReglescombatComponent } from './pages/reglescombat/reglescombat.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { ReglesdebaseComponent } from './pages/reglesdebase/reglesdebase.compone
     HomevideoComponent,
     ExplorationComponent,
     ImagedeComponent,
-    ReglesdebaseComponent
+    ReglesdebaseComponent,
+    ReglescombatComponent
   ],
   imports: [
     BrowserModule,

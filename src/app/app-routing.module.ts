@@ -9,6 +9,7 @@ import { ReglesdebaseComponent } from './pages/reglesdebase/reglesdebase.compone
 import { ChallengesComponent } from './pages/exploration/challenges/challenges.component';
 import { MapComponent } from './components/exploration/map/map.component';
 import {MapPageComponent} from './pages/exploration/map-page/map-page.component';
+import {ReglescombatComponent} from "./pages/reglescombat/reglescombat.component";
 
 /* importer vos pages ici */
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'reglesdebase', component: ReglesdebaseComponent },
   { path: 'starships', component:  StarshipsPageComponent },
   { path: 'exploration', component: ExplorationComponent },
+  {path: 'reglesdecombat', component: ReglescombatComponent }
   /* créer vos path ici avec votre component ici */
 ];
 
