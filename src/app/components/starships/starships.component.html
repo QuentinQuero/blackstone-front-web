@@ -1,49 +1,48 @@
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <div class="container-fluid">
   <div class="trap" style="text-align:center" >
-    <img src="http://localhost:3000/image/starship/logo.png">
+    <img class="img-fluid" src="http://localhost:3000/image/starship/logo.png">
   </div>
-  <div id="back" *ngFor="let data of starship" class="card mb-4" style="border: brown">
+  <div id="back" *ngFor="let data of starship" class="card mb-4 rounded-pill" style="border: brown">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="{{URL + data.image}}" class="card-img-top" >
+        <img cla src="{{URL + data.image}}" class="card-img-top" >
       </div>
       <div class="col-md-8">
         <div id="logo" class="card-body mb-4">
-          <h3 align="center">
-            <div class="octagon-block1">
-            <th><i>< {{data.name}} ></i></th>
+            <div class="octagon-block1 text-center">
+              <h3>
+                  <b><i>< {{data.name}} ></i></b>
+              </h3>
             </div>
-          </h3>
           <ul>
-            <h4>
               <div class="octagon-block2">
-              <i>Explorateur</i>
+                <h4>
+                    <i>Explorateur</i>
+                </h4>
               </div>
-            </h4>
             <li>
-                <i><a href="/characters"><th>+++ {{data.explorateur}} +++</th></a></i>
+                <a href="/characters"><b>+++<i> {{data.explorateur}} </i>+++</b></a>
             </li>
           </ul>
           <ul>
-          <h4>
             <div class="octagon-block2">
-              <i>Mode Appui</i>
+              <h4>
+                  <i>Mode Appui</i>
+              </h4>
             </div>
-          </h4>
-              <li><th>
-                {{data.appui}}
-              </th>
+              <li>
+                  <b>{{data.appui}}</b>
               </li>
             </ul>
           <ul>
-            <h4>
               <div class="octagon-block3">
-              <i>Mode Installation</i>
-            </div>
-            </h4>
-            <li><th>
-              {{data.instalations}}
-            </th>
+                <h4>
+                  <i>Mode Installation</i>
+                </h4>
+              </div>
+            <li>
+              <b>{{data.instalations}}</b>
             </li>
           </ul>
         </div>
