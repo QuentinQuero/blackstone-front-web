@@ -52,32 +52,48 @@
     </details>
   </div>
   <div class=" p-2 mb-2 mt-3 text-dark h2 bg-light text-uppercase font-italic border-bottom border-dark"># Mise en place</div>
-  <div>
-    <div id="chef" class="container p-2 mb-2 mt-3 bg-dark text-light h4 text-center">1. Choisissez un chef</div>
-    <div class="container  mb-2 mt-3 text-dark text-justify">
-      <img class="float-right" style="width:18rem;" src="http://localhost:3000/images/ReglesDeBase/Chef.png">
-      <div>
+
+  <div id="chef" class="container p-2 mb-2 mt-3 bg-dark text-light h4 text-center">1. Choisissez un chef</div>
+    <div class="row mb-2 mt-3 text-dark text-justify">
+      <div class="col-8 d-flex align-items-center">
         Un joueur doit être le chef - donnez-lui le marqueur Chef. Si les joueurs n'arrivent pas à se mettre d'accord, le propriétaire du jeu est le chef. Le joueur qui incarne le chef change à certains moments du jeu.
         Si une situation implique que plusieurs joueurs doivent effectuer quelque chose en même temps, le chef décide de l'ordre dans lequel les joueurs effectuent cette action. C'est alors parfois mentionné dans les règles sous l'appellation de “ordre du chef”.
       </div>
+      <div class="col-4">
+        <img class="img-fluid" src="http://localhost:3000/images/ReglesDeBase/Chef.png">
+      </div>
+    </div>
+
+  <div id="explorateurs" class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">2. Choisissez les explorateurs</div>
+  <div class="row mb-2 mt-3 text-dark text-justify">
+    <div class="col-8 d-flex align-items-center">
+      <div>
+        Une expédition se compose de quatre explorateurs. Le nombre d'explorateurs contrôlés par chaque joueur dépend du nombre de joueur :
+        <ul class="text-dark">
+          <li><span class="font-weight-bold">Un joueur :</span> S'il n’y a qu'un joueur, choisissez quatre explorateurs à contrôler.</li>
+          <li><span class="font-weight-bold">Deux joueurs :</span> S’il y a deux joueurs, chaque joueur choisit deux explorateurs à contrôler. </li>
+          <li><span class="font-weight-bold">Trois joueurs :</span> S’il y a trois joueurs, chaque joueur choisit un explorateur à contrôler. Le chef choisit ensuite un quatrième explorateur. Lors de l'expédition, cet explorateur sera toujours contrôlé par le chef. </li>
+          <li><span class="font-weight-bold">Quatre joueurs :</span> Chaque joueur choisit un explorateur à contrôler.</li>
+          <li><span class="font-weight-bold">Cinq joueurs :</span> Les joueurs désignent l’un d'entre eux qui sera le “joueur hostile” et contrôlera les hostiles rencontrés lors de l'expédition. À part le chef, n'importe quel joueur peut être le joueur hostile; en cas de désaccord, le chef désigne le joueur hostile. Chaque autre joueur choisit ensuite un explorateur à contrôler.</li>
+        </ul>
+    <div class="mb-2 mt-3 text-dark text-justify">
+      Dans l'ordre du chef, chaque joueur choisit le ou les explorateurs qu'il souhaite contrôler. Rein & Raus comptent comme un seul choix. Quand un joueur choisit un explorateur, il en prend la figurine et place la carte Personnage correspondante face Intentions Secrètes visible (il arrivera qu’un explorateur soit exalté lors d'une expédition, vous permettant de retourner la carte face Exalté). Remettez les figurines d'explorateurs et les cartes Personnage restantes dans la boîte du jeu.
+    </div>
+    <div class="mb-2 mt-3 text-dark text-justify">
+      Si les règles demandent à un explorateur de faire quelque chose - par exemple, se déplacer, attaquer, jeter un dé ou piocher une carte -alors le joueur qui contrôle l'explorateur effectuera ce qui est demandé, comme jeter un dé ou décider de la direction du mouvement de l'explorateur.
+    </div>
+    </div>
+    </div>
+    <div class="col-4">
+      <img class="img-fluid" src="http://localhost:3000/images/ReglesDeBase/Explorateurs2.png">
     </div>
   </div>
-  <div id="explorateurs" class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">2. Choisissez les explorateurs</div>
-  <div class="mb-2 mt-3 text-dark text-justify">
-    Une expédition se compose de quatre explorateurs. Le nombre d'explorateurs contrôlés par chaque joueur dépend du nombre de joueur :
-  </div>
-  <ul class="text-dark">
-    <li><span class="font-weight-bold">Un joueur :</span> S'il n’y a qu'un joueur, choisissez quatre explorateurs à contrôler.</li>
-    <li><span class="font-weight-bold">Deux joueurs :</span> S’il y a deux joueurs, chaque joueur choisit deux explorateurs à contrôler. </li>
-    <li><span class="font-weight-bold">Trois joueurs :</span> S’il y a trois joueurs, chaque joueur choisit un explorateur à contrôler. Le chef choisit ensuite un quatrième explorateur. Lors de l'expédition, cet explorateur sera toujours contrôlé par le chef. </li>
-    <li><span class="font-weight-bold">Quatre joueurs :</span> Chaque joueur choisit un explorateur à contrôler.</li>
-    <li><span class="font-weight-bold">Cinq joueurs :</span> Les joueurs désignent l’un d'entre eux qui sera le “joueur hostile” et contrôlera les hostiles rencontrés lors de l'expédition. À part le chef, n'importe quel joueur peut être le joueur hostile; en cas de désaccord, le chef désigne le joueur hostile. Chaque autre joueur choisit ensuite un explorateur à contrôler. </li>
-  </ul>
-  <div class="mb-2 mt-3 text-dark text-justify">
-    Dans l'ordre du chef, chaque joueur choisit le ou les explorateurs qu'il souhaite contrôler. Rein & Raus comptent comme un seul choix. Quand un joueur choisit un explorateur, il en prend la figurine et place la carte Personnage correspondante face Intentions Secrètes visible (il arrivera qu’un explorateur soit exalté lors d'une expédition, vous permettant de retourner la carte face Exalté). Remettez les figurines d'explorateurs et les cartes Personnage restantes dans la boîte du jeu.</div>
-  <div class="mb-2 mt-3 text-dark text-justify">
-    Si les règles demandent à un explorateur de faire quelque chose - par exemple, se déplacer, attaquer, jeter un dé ou piocher une carte -alors le joueur qui contrôle l'explorateur effectuera ce qui est demandé, comme jeter un dé ou décider de la direction du mouvement de l'explorateur.
-  </div>
+
+
+<!--done-->
+
+
+
   <div id="précipice" class="p-2 mb-2 mt-3 bg-dark text-light h4 text-center">3. Placez le plateau Précipice</div>
   <div class="mb-2 mt-3 text-dark text-justify">
     Placez le plateau Precipice sur la table de jeu. Mélangez les cartes Découverte et placez-les face cachée sur l'emplacement prévu à cet effet sur le plateau Precipice. </div>
